@@ -10,12 +10,10 @@ no corpo da requisição usar
 
 
 ```js
-{
     {
-	"ids": ["1270","832"],
-	"hours": 5
+        "ids": ["1270","832"],
+        "hours": 5
     }
-}
 ```
 os numeros dentro do array são os códigos dos canais que serão consultados.
 Você pode consultar quantos canais quiser de uma só vez.
@@ -23,3 +21,32 @@ Você pode consultar quantos canais quiser de uma só vez.
 No atributo "hours", você especifica qntas horas a partir de agora vc quer fazer a pesquisa.
 No exemplo acima, retornará programação dos canais especificados em "ids" de agora até 5 horas pra frente.
 Você pode expecificar quantas horas quiser, mas o retorno será conforme o limite da net combo.
+
+# Id dos Canais
+Aqui listo alguns ids de cannais, mais ids vc pode procurar no site do netcombo 
+neste link - https://www.net.com.br/tv-por-assinatura/programacao/guia-de-canais
+Normalmente o id é o numero do link para descrição de um canal.
+
+DOCUMENTÁRIOS
+
+Futura - 430
+National Geographic - 472
+Discovery Channel - 421
+Animal Planet - 407
+The History Channel - 2257
+Discovery Turbo - 419
+Discovery Science - 423
+Natgeo Wild - 933
+Discovery HD - 1066
+Discovery Theater HD - 877
+
+FILMES HD
+
+Canal Brasil HD - 1131
+TNT HD - 875
+Megapix HD - 878
+Space HD - 876
+Cinemax HD - 1098
+Prime Box Brazil HD - 1641
+Studio Universal HD - 2062
+Paramount Network HD - 1025
