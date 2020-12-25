@@ -22,6 +22,81 @@ No atributo "hours", você especifica qntas horas a partir de agora vc quer faze
 No exemplo acima, retornará programação dos canais especificados em "ids" de agora até 5 horas pra frente.
 Você pode expecificar quantas horas quiser, mas o retorno será conforme o limite da net combo.
 
+# Retorno da Api
+
+A api retorna algo como:
+
+```js
+{
+  "response": {
+    "docs": [
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T13:00Z",
+        "dh_fim": "2020-12-25T13:30Z",
+        "titulo": "Top Wing"
+      },
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T13:30Z",
+        "dh_fim": "2020-12-25T14:00Z",
+        "titulo": "Baby Shark"
+      },
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T14:00Z",
+        "dh_fim": "2020-12-25T14:30Z",
+        "titulo": "Dora, a Aventureira"
+      },
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T14:30Z",
+        "dh_fim": "2020-12-25T15:00Z",
+        "titulo": "Dora, a Aventureira"
+      },
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T15:00Z",
+        "dh_fim": "2020-12-25T15:30Z",
+        "titulo": "Rusty Rivets"
+      },
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T15:30Z",
+        "dh_fim": "2020-12-25T16:00Z",
+        "titulo": "Blaze e Os Monster Machine"
+      },
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T16:00Z",
+        "dh_fim": "2020-12-25T16:30Z",
+        "titulo": "Butterbean's Cafe"
+      },
+      {
+        "id_canal": "832",
+        "dh_inicio": "2020-12-25T16:30Z",
+        "dh_fim": "2020-12-25T17:00Z",
+        "titulo": "Abby Hatcher"
+      }
+    ],
+    "numFound": 8,
+    "start": 0
+  },
+  "responseHeader": {
+    "QTime": 9,
+    "params": {
+      "q": "id_revel:1_832 ",
+      "fl": "dh_fim dh_inicio titulo id_canal",
+      "sort": "id_canal asc,dh_inicio asc",
+      "fq": "dh_inicio:[2020-12-25T12:39:01Z TO 2020-12-25T16:39:01Z]",
+      "rows": "100000",
+      "wt": "json"
+    },
+    "status": 0
+  }
+}
+```
+
 # Id dos Canais
 Aqui listo alguns ids de cannais, mais ids vc pode procurar no site do netcombo 
 neste link - https://www.net.com.br/tv-por-assinatura/programacao/guia-de-canais
